@@ -60,6 +60,7 @@ public class CommunityHomeActivity extends Activity {
 		final Button blogButton = (Button)findViewById(R.id.button5);
 		final Button inboxButton = (Button)findViewById(R.id.button3);
 		final Button questionButton = (Button)findViewById(R.id.button4);
+		final Button statsButton = (Button)findViewById(R.id.show_stats);
 		Thread threader = new Thread(getData);
 		threader.start();
 
@@ -204,6 +205,21 @@ public class CommunityHomeActivity extends Activity {
 				startActivity(blogActivity);
 			}
 		});
+
+		statsButton.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+
+				Intent statsActivity = new Intent(getBaseContext(),StatsActivity.class);
+				statsActivity.getExtras();
+				bundle = getIntent().getExtras();
+				bundle.putString("Appliance", selAppliance);
+				statsActivity.putExtras(bundle);
+				startActivity(statsActivity);
+			}
+		});
 		
 		questionButton.setOnClickListener(new View.OnClickListener() {
 			
@@ -242,7 +258,7 @@ public class CommunityHomeActivity extends Activity {
 		public void run() {
 			Bundle bundle = new Bundle();
 			Message msg = new Message();
-			String result = getConnection("http://70.63.101.46/index.php","House");
+			String result = getConnection("http://192.168.0.10/index.php","House");
 			houseList.clear();
 
 			//parse json data
@@ -273,7 +289,7 @@ public class CommunityHomeActivity extends Activity {
 			Message msg = new Message();
 			Appliance appliance;
 			InputStream newIS =null;
-			String newResult = getConnection("http://70.63.101.46/index.php","Appliances");
+			String newResult = getConnection("http://192.168.0.10/index.php","Appliances");
 			appList.clear();
 			appliances.clear();
 

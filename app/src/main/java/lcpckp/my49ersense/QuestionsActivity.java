@@ -190,7 +190,7 @@ public class QuestionsActivity extends Activity {
 					try{
 
 						HttpClient httpclient = new DefaultHttpClient();
-						HttpPost httppost = new HttpPost("http://70.63.101.46/submitQuestion.php");
+						HttpPost httppost = new HttpPost("http://192.168.0.10/submitQuestion.php");
 						httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 						HttpResponse response = httpclient.execute(httppost);
 						HttpEntity entity = response.getEntity();
@@ -309,7 +309,7 @@ public class QuestionsActivity extends Activity {
 		public void run() {
 			Bundle bundle = new Bundle();
 			Message msg = new Message();
-			String result = getConnection("http://70.63.101.46/getDomainUsers.php","House");
+			String result = getConnection("http://192.168.0.10/getDomainUsers.php","House");
 			userList.clear();
 
 			//parse json data

@@ -49,7 +49,7 @@ public class ManageAccountActivity extends Activity{
 		bundle = getIntent().getExtras();
 		String user = bundle.getString("username");
 
-		String conResult = getConnection ("http://70.63.101.46/manageAccount.php","retrieve",user,"","","","","");
+		String conResult = getConnection ("http://192.168.0.10/manageAccount.php","retrieve",user,"","","","","");
 		try{
 			JSONArray jArray = new JSONArray(conResult);
 
@@ -161,7 +161,7 @@ public class ManageAccountActivity extends Activity{
 				//finally on successfull verification the appropriate message is displayed
 				else {
 
-					getConnection("http://70.63.101.46/manageAccount.php","update",userName,password,first_Name, last_Name, mail, phone_No);
+					getConnection("http://192.168.0.10/manageAccount.php","update",userName,password,first_Name, last_Name, mail, phone_No);
 					Toast.makeText(getBaseContext(),"Account Details Updated!",Toast.LENGTH_SHORT).show();
 					finish();
 				}

@@ -84,7 +84,7 @@ public class ForgotPasswordActivity extends Activity{
 			HttpClient httpclient = new DefaultHttpClient();
 
 			// have to change the ip here to your ip
-			HttpPost httppost = new HttpPost("http://70.63.101.46/sendmail.php");
+			HttpPost httppost = new HttpPost("http://192.168.0.10/sendmail.php");
 			httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs1));
 			HttpResponse response = httpclient.execute(httppost);
 			HttpEntity entity = response.getEntity();

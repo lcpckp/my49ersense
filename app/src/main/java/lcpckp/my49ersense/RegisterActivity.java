@@ -166,7 +166,7 @@ public class RegisterActivity extends Activity{
 					}
 					else
 
-						Toast.makeText(getBaseContext(),"Problem! Server returned invalid value",Toast.LENGTH_SHORT).show();
+						Toast.makeText(getBaseContext(),"Problem! Server returned invalid value" + status,Toast.LENGTH_SHORT).show();
 				}
 			}
 		});
@@ -188,7 +188,7 @@ public class RegisterActivity extends Activity{
 			HttpClient httpclient = new DefaultHttpClient();
 
 			// have to change the ip here to correct ip
-			HttpPost httppost = new HttpPost("http://70.63.101.46/register.php");
+			HttpPost httppost = new HttpPost("http://192.168.0.10/register.php");
 			httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs1));
 			HttpResponse response = httpclient.execute(httppost);
 			HttpEntity entity = response.getEntity();

@@ -71,6 +71,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="lcpckp.my49ersense.StatsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="lcpckp.my49ersense.StatsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="lcpckp.my49ersense.ManageAccountActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"

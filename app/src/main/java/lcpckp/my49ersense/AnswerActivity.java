@@ -112,7 +112,7 @@ public class AnswerActivity extends Activity {
 					try{
 
 						HttpClient httpclient = new DefaultHttpClient();
-						HttpPost httppost = new HttpPost("http://70.63.101.46/submitAnswer.php");
+						HttpPost httppost = new HttpPost("http://192.168.0.10/submitAnswer.php");
 						httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 						HttpResponse response = httpclient.execute(httppost);
 						HttpEntity entity = response.getEntity();

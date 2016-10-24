@@ -45,7 +45,7 @@ public class InboxItemActivity extends Activity{
 
 
 		try {
-			InputStream is = new URL("http://70.63.101.46/questionImages/"+pictureName).openStream();
+			InputStream is = new URL("http://192.168.0.10/questionImages/"+pictureName).openStream();
 			Bitmap bitmap = BitmapFactory.decodeStream(is);
 			is.close(); 
 			ImageView iv = (ImageView) findViewById(R.id.imageView1);

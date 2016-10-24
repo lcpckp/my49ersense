@@ -70,7 +70,7 @@ public class BlogSpotActivity extends Activity{
 			nameValuePairs.add(new BasicNameValuePair("Appliance", appliance));
 
 			// have to change the ip here to your ip
-			HttpPost httppost = new HttpPost("http://70.63.101.46/blog.php");
+			HttpPost httppost = new HttpPost("http://192.168.0.10/blog.php");
 			httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 			HttpResponse response = httpclient.execute(httppost);
 			HttpEntity entity = response.getEntity();
@@ -181,7 +181,7 @@ public class BlogSpotActivity extends Activity{
 						HttpClient httpclient = new DefaultHttpClient();
 
 						// have to change the ip here to your ip
-						HttpPost httppost = new HttpPost("http://70.63.101.46/blog.php");
+						HttpPost httppost = new HttpPost("http://192.168.0.10/blog.php");
 						httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs1));
 						HttpResponse response = httpclient.execute(httppost);
 						HttpEntity entity = response.getEntity();

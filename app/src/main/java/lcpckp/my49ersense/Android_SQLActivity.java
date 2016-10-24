@@ -159,7 +159,7 @@ public class Android_SQLActivity extends Activity {
 			HttpClient httpclient = new DefaultHttpClient();
 
 			// have to change the ip here to correct ip
-			HttpPost httppost = new HttpPost("http://70.63.101.46/login.php");
+			HttpPost httppost = new HttpPost("http://192.168.0.10/login.php");
 			httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs1));
 			HttpResponse response = httpclient.execute(httppost);
 			HttpEntity entity = response.getEntity();

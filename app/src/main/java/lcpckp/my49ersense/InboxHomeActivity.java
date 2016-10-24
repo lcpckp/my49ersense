@@ -56,7 +56,7 @@ public class InboxHomeActivity extends Activity{
 			//nameValuePairs.add(new BasicNameValuePair("Appliance", appliance));
 
 			// have to change the ip here to your ip
-			HttpPost httppost = new HttpPost("http://70.63.101.46/inboxHome.php");
+			HttpPost httppost = new HttpPost("http://192.168.0.10/inboxHome.php");
 			httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 			HttpResponse response = httpclient.execute(httppost);
 			HttpEntity entity = response.getEntity();

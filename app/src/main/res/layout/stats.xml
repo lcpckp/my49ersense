@@ -4,112 +4,59 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <Spinner
-        android:id="@+id/spinner1"
+    <TextView
+        android:text="Usage Totals"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp" >
-    </Spinner>
+        android:id="@+id/title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </Spinner>
-
-    <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </Spinner>
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <TextView
+        android:text="Watts:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp" >
+        android:id="@+id/textView" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="44dp"
-            android:text=" Submit " />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:text=""
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginRight="44dp"
-            android:text="Rate My Experience" />
-    </LinearLayout>
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <TextView
+        android:text="TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal" >
+        android:id="@+id/watts" />
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="120dp"
-            android:layout_height="38dp"
-            android:gravity="right|center_vertical"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <requestFocus />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="140dp"
-            android:layout_height="40dp"
-            android:gravity="right|center_vertical"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <Button
-            android:text="Show All Stats"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/show_stats"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <TextView
+        android:text="Lumens:"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal" >
+        android:layout_height="wrap_content"
+        android:id="@+id/lumenstitle" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight=".32"
-            android:text="Inbox" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lumens" />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight=".32"
-            android:text="Ask a Question" />
+    <TextView
+        android:text="Size:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sizetitle" />
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight=".32"
-            android:text="BlogSpot" />
-    </LinearLayout>
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/size" />
+
+    <TextView
+        android:text="Voltage:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/voltagetitle" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/voltage" />
 
 </LinearLayout>
